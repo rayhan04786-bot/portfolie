@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Basic SEO & Meta Tags -->
+    <title>Rayhan Mohideen | Entrepreneur & Builder</title>
+    <meta name="description" content="Portfolio of Rayhan Mohideen, an entrepreneur and builder from Chennai, India, specializing in brand building, systems, and internet culture.">
+    <meta name="keywords" content="Rayhan Mohideen, Entrepreneur, Builder, Chennai, Atlas Index, Nomads Agency, Brand Building, Startups">
+    <meta name="author" content="Rayhan Mohideen">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Rayhan Mohideen | Entrepreneur & Builder">
+    <meta property="og:description" content="Drawn to ambitious people, meaningful work, and ideas that compound over time.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://raw.githubusercontent.com/absoluteSTrange/ray-portfolio-image/refs/heads/main/70596f1c-cf00-498b-8f6f-c00a04169732.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/absoluteSTrange/ray-portfolio-image/refs/heads/main/9eb34cba-d2c0-4843-9da9-4e7150a8f17b.png">
+    
+    <!-- Load Satoshi Font -->
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Satoshi', sans-serif; background-color: #f2f3f3; color: #000; overflow-x: hidden; }
+        .tracking-ultra-tight { letter-spacing: -0.06em; }
+        .hover-underline { position: relative; display: inline-block; }
+        .hover-underline::after { content: ''; position: absolute; width: 100%; transform: scaleX(0); height: 2px; bottom: -2px; left: 0; background-color: currentColor; transform-origin: bottom right; transition: transform 0.25s ease-out; }
+        .hover-underline:hover::after { transform: scaleX(1); transform-origin: bottom left; }
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #000; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #333; }
+    </style>
+</head>
+
+<body class="antialiased selection:bg-black selection:text-white pb-24 text-black">
+
+    <div id="splash-screen" class="fixed inset-0 z-[100] flex items-center justify-center bg-[#f2f3f3] transition-opacity duration-1000">
+        <img src="https://raw.githubusercontent.com/absoluteSTrange/ray-portfolio-image/refs/heads/main/ChatGPT%20Image%20Jun%2026%2C%202026%2C%2008_57_53%20PM.png"
+            alt="Logo" class="w-24 h-24 rounded-full animate-pulse">
+    </div>
+
+    <nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[95%] max-w-4xl z-[60] flex items-center justify-between px-6 py-2.5 rounded-full backdrop-blur-md bg-[#f2f3f3]/70 border border-black/10">
+        <a href="#" aria-label="Scroll to top" class="w-8 h-8 rounded-full overflow-hidden">
+            <img src="https://raw.githubusercontent.com/absoluteSTrange/ray-portfolio-image/refs/heads/main/ChatGPT%20Image%20Jun%2026%2C%202026%2C%2008_57_53%20PM.png"
+                alt="Rayhan Mohideen" class="w-full h-full object-cover">
+        </a>
+
+        <div class="hidden md:flex space-x-8 text-sm font-medium text-black">
+            <a href="#work" class="hover-underline flex items-center gap-1">work <span class="text-xl leading-none">→</span></a>
+            <a href="#about" class="hover-underline flex items-center gap-1">about <span class="text-xl leading-none">→</span></a>
+            <a href="#services" class="hover-underline flex items-center gap-1">philosophy <span class="text-xl leading-none">→</span></a>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <a href="#contact" class="bg-black text-white px-4 py-1.5 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors flex items-center gap-1">
+                contact <span class="text-xl leading-none">→</span>
+            </a>
+            
+            <!-- Hamburger Button for Mobile -->
+            <button id="mobile-menu-btn" class="md:hidden flex flex-col justify-center items-center gap-1.5 w-8 h-8 outline-none">
+                <span class="w-5 h-[2px] bg-black transition-transform duration-300" id="bar1"></span>
+                <span class="w-5 h-[2px] bg-black transition-transform duration-300" id="bar2"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="absolute top-[120%] left-0 w-full bg-[#f2f3f3]/95 backdrop-blur-md border border-black/10 rounded-2xl shadow-xl flex flex-col items-center py-6 space-y-6 text-xl font-medium opacity-0 pointer-events-none transform -translate-y-4 transition-all duration-300 md:hidden">
+            <a href="#work" class="mobile-link hover-underline">work</a>
+            <a href="#about" class="mobile-link hover-underline">about</a>
+            <a href="#services" class="mobile-link hover-underline">philosophy</a>
+        </div>
+    </nav>
+
+    <main class="max-w-[1700px] mx-auto px-6 md:px-2 lg:px-1 pt-24 md:pt-18">
+        
+        <section class="min-h-[80vh] flex flex-col justify-between">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 mt-12 mb-8">
+                <div class="md:col-span-4 md:col-start-1 md:mt-0 flex items-end pb-2 md:pb-4">
+                    <p class="text-xl md:text-2xl font-medium tracking-tighter leading-snug text-black w-full">
+                        Drawn to ambitious people, meaningful work, and ideas that compound over time. I believe a single conversation, opportunity, or decision can change the direction of a life.
+                    </p>
+                </div>
+                <div class="hidden md:block md:col-span-1"></div>
+                <!-- Updated Image Container: mx-auto ensures it's centered on mobile -->
+                <div class="md:col-span-7 relative rounded-[12px] overflow-hidden h-[350px] md:h-[450px] w-full mx-auto md:ml-auto md:mr-0 md:w-full max-w-[500px] sm:text-center">
+                    <img src="https://raw.githubusercontent.com/absoluteSTrange/ray-portfolio-image/refs/heads/main/70596f1c-cf00-498b-8f6f-c00a04169732.jpg"
+                        alt="Hero Background" class="absolute inset-0 w-full h-full object-cover object-top z-0">
+                </div>
+            </div>
+
+            <div class="w-full mt-auto">
+                <h1 class="text-[11.5vw] md:text-[12.5vw] whitespace-nowrap leading-[0.8] tracking-ultra-tight font-medium text-black -ml-[0.7vw]">
+                    Rayhan Mohideen
+                </h1>
+            </div>
+        </section>
+
+        <!-- Progressive Blur Element -->
+        <div class="fixed bottom-0 left-0 w-full h-32 z-[40] pointer-events-none"
+             style="backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); mask-image: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+        </div>
+
+        <section id="work" class="mt-16 md:mt-8">
+            <div class="py-4 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start mb-6">
+                <div class="md:col-span-4 flex justify-between items-center text-black">
+                    <h2 class="text-3xl font-medium tracking-ultra-tight">Featured Ventures</h2>
+                </div>
+                <div class="hidden md:block md:col-span-1"></div>
+                <div class="md:col-span-7 flex justify-end items-center text-black">
+                    <span class="text-lg font-medium">view all</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
+                <a href="https://nomadsads.in/" target="_blank" class="block">
+                    <div class="w-full aspect-square bg-black rounded-2xl overflow-hidden relative mb-4 flex items-center justify-center p-8">
+                        <img src="https://raw.githubusercontent.com/absoluteSTrange/ray-portfolio-image/refs/heads/main/Nomads%20White%2012.png" alt="Nomads Logo" class="w-1/2 h-1/2 object-contain">
+                    </div>
+                    <div class="flex justify-between items-start text-lg font-medium text-black">
+                        <div>
+                            <h3 class="text-2xl font-medium tracking-ultra-tight">Nomads</h3>
+                            <p class="font-medium text-lg tracking-ultra-tight">Digital Services agency</p>
+                        </div>
+                        <span class="font-medium text-lg">2024</span>
+                    </div>
+                </a>
+
+                <a href="https://atlasindex.in/" target="_blank" class="block">
+                    <div class="w-full aspect-square bg-black rounded-2xl overflow-hidden relative mb-4 flex items-center justify-center p-8">
+                        <img src="https://raw.githubusercontent.com/absoluteSTrange/ray-portfolio-image/refs/heads/main/Atlas%20White.png" alt="Atlas Logo" class="w-1/2 h-1/2 object-contain">
+                    </div>
+                    <div class="flex justify-between items-start text-lg font-medium text-black">
+                        <div>
+                            <h3 class="font-medium text-2xl tracking-ultra-tight">Atlas</h3>
+                            <p class="font-medium text-lg tracking-ultra-tight">India's first real estate price index</p>
+                        </div>
+                        <span class="font-medium text-lg">2026</span>
+                    </div>
+                </a>
+
+                <div class="block">
+                    <div class="w-full aspect-square bg-black rounded-2xl overflow-hidden relative mb-4 flex items-center justify-center p-8">
+                        <img src="https://raw.githubusercontent.com/absoluteSTrange/ray-portfolio-image/refs/heads/main/3AM%20White.png" alt="3AM Logo" class="w-1/2 h-1/2 object-contain">
+                    </div>
+                    <div class="flex justify-between items-start text-lg font-medium text-black">
+                        <div>
+                            <h3 class="font-medium text-2xl tracking-ultra-tight">3AM</h3>
+                            <p class="font-medium text-lg tracking-ultra-tight">Culture Circle</p>
+                        </div>
+                        <span class="font-medium text-lg">2026</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="mt-32">
+            <h2 class="text-[12.5vw] md:text-[14.5vw] whitespace-nowrap leading-[0.8] tracking-ultra-tight font-medium text-center mb-8 w-full text-black -ml-[0.7vw]">
+                jack of all trades
+            </h2>
+
+            <div class="py-4 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start mb-8">
+                <div class="md:col-span-4 flex justify-between items-center text-black">
+                    <h3 class="text-2xl font-medium">about</h3>
+                </div>
+                <div class="hidden md:block md:col-span-1"></div>
+                <div class="md:col-span-7"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8">
+                <div class="md:col-span-3">
+                    <div class="w-full aspect-[4/5] bg-[#d0d0d0] rounded-md overflow-hidden relative">
+                        <img src="https://raw.githubusercontent.com/absoluteSTrange/ray-portfolio-image/refs/heads/main/13e0593c-a063-4a7d-8951-f8155dfe1284.jpg"
+                            alt="Rayhan Mohideen" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="hidden md:block md:col-span-1"></div>
+                <div class="md:col-span-7 flex flex-col space-y-6 text-xl font-medium tracking-tighter leading-snug text-black">
+                    <p>I'm Rayhan Mohideen, an entrepreneur and builder from Chennai, India. Over the last few years, I've explored multiple industries, built businesses, worked with clients, and spent countless hours understanding how brands, systems, and communities are created.</p>
+                    <p>What interests me most isn't entrepreneurship itself — it's the people behind it. I've learned that opportunities rarely arrive when you expect them. Most of the meaningful changes in my life came from a conversation, an introduction, or an idea shared at the right moment.</p>
+                    <p>Today, I spend my time building businesses, creating systems, exploring internet culture, and bringing ambitious people together. I believe the right people combined with the right systems can create extraordinary outcomes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="manifesto" class="mt-20">
+            <div class="border-t-[3px] border-black py-4 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start mb-8">
+                <div class="md:col-span-4 flex justify-between items-center mb-4 md:mb-0 text-black">
+                    <h3 class="text-2xl font-medium">philosophy</h3>
+                </div>
+                <div class="hidden md:block md:col-span-1"></div>
+                <div class="md:col-span-7 font-medium tracking-tighter text-xl leading-snug text-black">
+                    <p>Great design begins with play. But play requires a safe structure to happen. I turn inner chaos into clarity. I design coherent environments that are fun to live inside. For me, design is the tool to create a better reality: a world with human connection at the center and play at heart.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="honors" class="mt-20">
+            <div class="border-t-[3px] border-black py-4 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start mb-6">
+                <div class="md:col-span-4 flex justify-between items-center font-medium tracking-tighter text-black">
+                    <h3 class="text-3xl font-medium">Things I've built</h3>
+                </div>
+                <div class="hidden md:block md:col-span-1"></div>
+                <div class="md:col-span-7"></div>
+            </div>
+            <div class="flex flex-col text-lg font-medium text-black font-medium tracking-tighter">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 py-5 border-t-[3px] border-black">
+                    <div class="md:col-span-4"><div>Flix Drinks</div><div>Beverage Brand</div></div>
+                    <div class="hidden md:block md:col-span-1"></div>
+                    <div class="md:col-span-6"><div>Building products & validating demand</div><div>Launched a consumer brand, secured retail distribution, and learned customer acquisition.</div></div>
+                    <div class="md:col-span-1 text-right">2023</div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 py-5 border-t-[3px] border-black">
+                    <div class="md:col-span-4"><div>Guts & Glory</div><div>Event Management</div></div>
+                    <div class="hidden md:block md:col-span-1"></div>
+                    <div class="md:col-span-6"><div>Scaling operations & client management</div><div>Produced large-scale school events, managed teams, and learned how to grow service businesses.</div></div>
+                    <div class="md:col-span-1 text-right">2024</div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 py-5 border-t-[3px] border-black">
+                    <div class="md:col-span-4"><div>Nomads</div><div>Digital Services Agency</div></div>
+                    <div class="hidden md:block md:col-span-1"></div>
+                    <div class="md:col-span-6"><div>Building systems & acquiring clients</div><div>Scaled the agency to ₹2L/month and developed expertise in sales, delivery, and operations.</div></div>
+                    <div class="md:col-span-1 text-right">2025</div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 py-5 border-t-[3px] border-black">
+                    <div class="md:col-span-4"><div>Atlas</div><div>Real Estate Startup</div></div>
+                    <div class="hidden md:block md:col-span-1"></div>
+                    <div class="md:col-span-6"><div>Market research & venture building</div><div>Building India's first real estate index while learning fundraising, product strategy, and market design.</div></div>
+                    <div class="md:col-span-1 text-right">2026</div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 py-5 border-t-[3px] border-black border-b-[3px]">
+                    <div class="md:col-span-4"><div>3AM</div><div>Community</div></div>
+                    <div class="hidden md:block md:col-span-1"></div>
+                    <div class="md:col-span-6"><div>Building communities & meaningful connections</div><div>Creating an online and offline network that brings together ambitious entrepreneurs across India.</div></div>
+                    <div class="md:col-span-1 text-right">2026</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-20">
+            <div class="border-t-[3px] border-black py-4 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start mb-6">
+                <div class="md:col-span-4 flex justify-between items-center text-black tracking-tighter">
+                    <h3 class="text-3xl font-medium">My Motivation</h3>
+                </div>
+                <div class="hidden md:block md:col-span-1"></div>
+                <div class="md:col-span-7"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 text-xl font-medium  tracking-tighter text-black mt-8">
+                <div><span class="block text-black text-base mb-2">01</span>My Mother and dad are the core reason I keep building.</div>
+                <div><span class="block text-black text-base mb-2">02</span>My future partner is the reason I continuously strive to keep improving.</div>
+                <div><span class="block text-black text-base mb-2">03</span>Every person who believes in me is the reason I keep going.</div>
+            </div>
+        </section>
+
+        <section id="services" class="mt-32">
+            <h2 class="text-[9.5vw] md:text-[11.5vw] whitespace-nowrap leading-[0.8] tracking-ultra-tight font-medium text-center mb-8 w-full text-black -ml-[0.7vw]">
+                building philosophy
+            </h2>
+            <div class="py-4 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start mb-6 text-black">
+                <div class="md:col-span-4 flex justify-between items-center"><h3 class="text-2xl font-medium tracking-tighter">Framework</h3></div>
+                <div class="hidden md:block md:col-span-1"></div>
+                <div class="md:col-span-7 flex justify-end items-center"><span class="text-lg font-medium text-black">view</span></div>
+            </div>
+            <div class="flex flex-col">
+                <div class="border-t-[3px] border-black py-8 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start">
+                    <div class="md:col-span-4 font-medium text-xl text-black">01 People</div>
+                    <div class="hidden md:block md:col-span-1"></div>
+                    <div class="md:col-span-7 flex flex-col md:flex-row justify-between gap-6">
+                        <div class="text-black font-medium text-xl tracking-tighter leading-snug pr-0 md:pr-4">Most breakthroughs begin with conversations, introductions, friendships, and shared experiences. Environment is often the strategy.</div>
+                    </div>
+                </div>
+                <div class="border-t-[3px] border-black py-8 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start">
+                    <div class="md:col-span-4 font-medium text-xl text-black">02 Opportunity</div>
+                    <div class="hidden md:block md:col-span-1"></div>
+                    <div class="md:col-span-7 flex flex-col md:flex-row justify-between gap-6">
+                        <div class="text-black font-medium text-xl tracking-tighter leading-snug pr-0 md:pr-4">The internet gives us access, but relationships create leverage. One introduction can open doors that years of effort cannot.</div>
+                    </div>
+                </div>
+                <div class="border-t-[3px] border-black py-8 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start">
+                    <div class="md:col-span-4 font-medium text-xl text-black">03 Identity</div>
+                    <div class="hidden md:block md:col-span-1"></div>
+                    <div class="md:col-span-7 flex flex-col md:flex-row justify-between gap-6">
+                        <div class="text-black font-medium text-xl tracking-tighter leading-snug pr-0 md:pr-4">The strongest brands aren't selling products — they're selling belonging, meaning, and a vision people want to be part of.</div>
+                    </div>
+                </div>
+                <div class="border-t-[3px] border-black border-b-[3px] py-8 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start">
+                    <div class="md:col-span-4 font-medium text-xl text-black">04 Community</div>
+                    <div class="hidden md:block md:col-span-1"></div>
+                    <div class="md:col-span-7 flex flex-col md:flex-row justify-between gap-6">
+                        <div class="text-black font-medium text-xl tracking-tighter leading-snug pr-0 md:pr-4">When ambitious people gather around a shared mission, opportunities become inevitable. The group becomes the strategy.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="mt-20 mb-12">
+            <div class="border-t-[3px] border-black py-4 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start mb-6">
+                <div class="md:col-span-4 flex justify-between items-center text-black">
+                    <h3 class="text-3xl font-medium">contact</h3>
+                </div>
+                <div class="hidden md:block md:col-span-1"></div>
+                <div class="md:col-span-7"></div>
+            </div>
+            <form id="contact-form" class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start mt-4">
+                <div class="md:col-span-4 flex flex-col gap-6 text-black">
+                    <div><label class="block text-lg font-medium mb-1.5">name</label>
+                        <input id="name-input" type="text" placeholder="your name here" required class="w-full bg-transparent border-[3px] border-black text-black rounded-full px-5 py-3 text-lg focus:outline-none"></div>
+                    <div><label class="block text-lg font-medium mb-1.5">email</label>
+                        <input id="email-input" type="email" placeholder="your mail here" required class="w-full bg-transparent border-[3px] border-black text-black rounded-full px-5 py-3 text-lg focus:outline-none"></div>
+                </div>
+                <div class="hidden md:block md:col-span-1"></div>
+                <div class="md:col-span-7 flex flex-col gap-8 text-black">
+                    <div class="w-full"><label class="block text-lg font-medium mb-1.5">request</label>
+                        <textarea id="request-input" placeholder="write here" required class="w-full h-40 bg-transparent border-[3px] border-black text-black rounded-2xl px-5 py-4 text-lg focus:outline-none resize-none"></textarea></div>
+                    <div class="w-full">
+                        <button id="submit-btn" type="submit" class="w-full md:w-auto px-10 bg-black text-white rounded-full py-3 text-lg font-medium hover:bg-gray-800 transition-colors">submit</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <footer class="pt-8 border-t-[3px] border-black text-lg font-medium mt-16 mb-8 text-black">
+            <div class="flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-4">
+                <div class="hidden lg:block w-12"><img src="https://raw.githubusercontent.com/absoluteSTrange/ray-portfolio-image/refs/heads/main/ChatGPT%20Image%20Jun%2026%2C%202026%2C%2008_57_53%20PM.png" alt="Rayhan Mohideen" class="w-10 h-10 rounded-full object-cover"></div>
+                <div class="flex-1 flex flex-col gap-6"><div>Rayhan Mohideen<br>Building brands</div><div>open to collaborate</div></div>
+                <div class="flex-1 flex flex-col gap-6"><div><a href="mailto:rayhan@atlasindex.in" class="hover-underline">rayhan@atlasindex.in</a></div><div>Royapettah, Chennai</div></div>
+                <div class="flex-1 flex flex-col gap-1">
+                    <a href="https://www.instagram.com/life.rayyy" target="_blank" class="hover-underline w-fit">instagram ↗</a>
+                    <a href="https://www.linkedin.com/in/rayhan-mohideen-675632331" target="_blank" class="hover-underline w-fit">linkedin ↗</a>
+                </div>
+                <div class="flex-1 flex flex-col gap-6 lg:text-right">
+                    <div>© Rayhan Mohideen, 2026</div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        window.addEventListener('load', () => {
+            const splash = document.getElementById('splash-screen');
+            setTimeout(() => {
+                splash.style.opacity = '0';
+                setTimeout(() => splash.style.display = 'none', 1000);
+            }, 1000);
+        });
+
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name-input').value;
+            const email = document.getElementById('email-input').value;
+            const request = document.getElementById('request-input').value;
+            window.location.href = `mailto:rayhan@atlasindex.in?subject=New%20Contact%20Request%20from%20${encodeURIComponent(name)}&body=Name:%20${encodeURIComponent(name)}%0AEmail:%20${encodeURIComponent(email)}%0A%0ARequest:%0A${encodeURIComponent(request)}`;
+        });
+
+        // Mobile Menu Toggle Logic
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const bar1 = document.getElementById('bar1');
+        const bar2 = document.getElementById('bar2');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        let isMenuOpen = false;
+
+        function toggleMenu() {
+            isMenuOpen = !isMenuOpen;
+            if (isMenuOpen) {
+                // Show Menu
+                mobileMenu.classList.remove('opacity-0', 'pointer-events-none', '-translate-y-4');
+                mobileMenu.classList.add('opacity-100', 'pointer-events-auto', 'translate-y-0');
+                // Animate Hamburger
+                bar1.style.transform = 'translateY(4px) rotate(45deg)';
+                bar2.style.transform = 'translateY(-4px) rotate(-45deg)';
+            } else {
+                // Hide Menu
+                mobileMenu.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
+                mobileMenu.classList.add('opacity-0', 'pointer-events-none', '-translate-y-4');
+                // Reset Hamburger
+                bar1.style.transform = 'none';
+                bar2.style.transform = 'none';
+            }
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
+        mobileLinks.forEach(link => link.addEventListener('click', toggleMenu));
+    </script>
+</body>
+</html>
